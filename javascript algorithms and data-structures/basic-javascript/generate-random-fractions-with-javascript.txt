@@ -1,0 +1,8 @@
+function randomFraction() {
+
+  // Only change code below this line
+  let villi = Math.random();
+  return villi;
+
+  // Only change code above this line
+}
