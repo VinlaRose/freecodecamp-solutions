@@ -1,0 +1,32 @@
+let user = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+
+function addFriend(userObj, friend) {
+  let array = userObj.data.friends;
+  array.push(friend);
+  return array;
+}
+
+console.log(addFriend(user, 'Pete'));
+
+// let array = user.data.friends;
+
+// array.push('pete');
+// console.log(array);
