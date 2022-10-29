@@ -1,0 +1,36 @@
+function confirmEnding(str, target) {
+  let array1 = [];
+  let array2 = [];
+  array1 = str.split('');
+  array2 = target.split('');
+  
+  console.log(array2);
+  let num = array2.length;
+  let ending = []
+  ending = array1.slice(array1.length - num);
+  console.log(ending)
+  let result;
+  for(let i=0;i<array2.length;i++){
+      if(array2[i] !== ending[i]){
+         result = "no";
+         console.log(result)
+        
+        break;
+
+      }
+      
+  }
+  if(result === "no"){
+    console.log(false);
+    return false;
+    
+  }else {
+    console.log(true);
+    return true;
+  }
+
+
+  }
+
+
+confirmEnding("Abstraction", "action");
