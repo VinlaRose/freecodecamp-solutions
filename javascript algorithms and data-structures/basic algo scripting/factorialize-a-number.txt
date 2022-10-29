@@ -1,0 +1,13 @@
+function factorialize(num) {
+  let i = 0;
+  let product = 1
+  while(num>=1)
+  {
+      product = product*(num);
+      num--;
+      
+  }
+  return product;
+}
+
+factorialize(5);
