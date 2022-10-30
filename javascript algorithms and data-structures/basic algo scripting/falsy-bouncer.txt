@@ -1,0 +1,13 @@
+function bouncer(arr) {
+  let arr2 = [].concat(arr);
+  let arr3 =[];
+ 
+  for(let i = 0; i<arr2.length; i++){
+      if(Boolean(arr2[i]) === true){
+          arr3.push(arr2[i]);
+          }
+  }
+  return arr3;
+}
+
+bouncer([false, null, 0, NaN, undefined, ""]);
