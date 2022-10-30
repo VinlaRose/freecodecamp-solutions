@@ -1,0 +1,38 @@
+function mutation(arr) {
+  let count = 0;
+  let arr2 =[]
+  
+  for(let i = 0; i<arr.length;i++){
+    
+    arr2[i] = arr[i].toUpperCase().split("");
+    
+  }
+  
+  
+  for(let i = 0; i<arr2[1].length;i++){
+    for(let j = 0; j<arr2[0].length;j++){
+      if(arr2[1][i] == arr2[0][j]){
+        count++;
+        break;
+
+      }
+    }
+
+  }
+  
+  let secondElemLength = arr[1].length;
+
+  if(count >= secondElemLength){
+    
+    return true;
+  }else{
+    return false
+  }
+  
+
+
+}
+
+mutation(["voodoo", "no"]);
+mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"])
+mutation(["ate", "date"])
